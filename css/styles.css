@@ -1,0 +1,66 @@
+.contact-info {
+    background-color: #1196CC; /* Color azul para el bloque de información de contacto */
+    color: #fff; /* Texto blanco en el bloque de información de contacto */
+  }
+
+
+
+
+
+
+  
+
+
+
+  /* Estilos generales para la sección de doctores */
+#doctors {
+  padding: 2rem 1rem; /* Espaciado superior e inferior */
+}
+
+/* Asegurar que la imagen del doctor se ajuste bien */
+.doctor-image {
+  width: 100%; /* Ocupar el ancho completo */
+  height: auto; /* Mantener la proporción de aspecto */
+  border-radius: 10px; /* Esquinas redondeadas */
+}
+
+/* Estilos para el contenedor de la tarjeta */
+.card {
+  margin: 1rem; /* Espaciado entre tarjetas */
+  flex: 0 0 calc((100% - 60px) / 3); /* Flex para tres elementos */
+}
+
+/* Para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .card {
+    flex: 0 0 100%; /* Mostrar solo un doctor en pantallas pequeñas */
+    margin: 0.5rem; /* Menos margen en pantallas pequeñas */
+  }
+
+  .title.is-4 {
+    font-size: 1.5rem; /* Reducir tamaño de fuente en pantallas pequeñas */
+  }
+
+  .subtitle.is-6 {
+    font-size: 1rem; /* Reducir tamaño de fuente en pantallas pequeñas */
+  }
+}
+
+/* Estilo para los controles del carrusel */
+.tns-controls button {
+  background: none;
+  border: none;
+  color: #333;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.tns-controls button:hover {
+  color: #00d1b2; /* Color de hover que combine con Bulma */
+}
+
+/* Asegurarte de que el slider funcione bien */
+.slider {
+  display: flex;
+  overflow: hidden; /* Evitar el desbordamiento */
+}
